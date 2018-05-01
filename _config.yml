@@ -17,7 +17,7 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: projects_url
+  projects: http://github.com/isacikgoz
   search: /Search/
 
 
@@ -28,7 +28,6 @@ nav:
 social_links:
   github: http://github.com/isacikgoz
   twitter: http://twitter.com/isacikgoz
-  facebook: /
   linkedin: http://linkedin.com/in/isacikgoz/
   mail: mailto:serdaracikgoz86@gmail.com
 
