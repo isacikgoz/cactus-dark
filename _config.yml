@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+projects_url: http://github.com/isacikgoz
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -18,6 +18,7 @@ nav:
   about: /about/
   articles: /archives/
   projects: projects_url
+  search: /Search/
 
 
 # Links to your social media accounts.
@@ -25,11 +26,11 @@ nav:
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
 social_links:
-  github: http://github.com/probberechts/cactus-dark
-  twitter: /
+  github: http://github.com/isacikgoz
+  twitter: http://twitter.com/isacikgoz
   facebook: /
-  linkedin: /
-  mail: mailto:name@email.com
+  linkedin: http://linkedin.com/in/isacikgoz/
+  mail: mailto:serdaracikgoz86@gmail.com
 
 
 # Customize the overview with the most recent blog posts on the index page.
@@ -113,13 +114,13 @@ open_graph:
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus: 
-  enabled: false
-  shortname: cactus-1
+  enabled: true
+  shortname: isacikgoz
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics: 
-  enabled: false
-  id: UA-86660611-1
+  enabled: true
+  id: UA-97833654-1 
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
@@ -129,4 +130,4 @@ baidu_analytics:
 # Fill in you Gravatar user id / email if you want to use your gravatar as the
 # logo and/or favicons of you website.
 gravatar:
-  email: name@email.com
+  email: serdaracikgoz86@gmail.com
