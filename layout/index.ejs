@@ -58,4 +58,11 @@
     <% } %>
   </ul>
 </section>
+
+<section id="subtitle">
+<% if (config.subtitle) { %>
+    <%- markdown(config.subtitle) %>
+  <% } %>
+</section>
+
 <% } %>
