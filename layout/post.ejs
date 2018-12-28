@@ -1,15 +1,28 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
-    <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name"><% if (page.author) { %><%- page.author %><% } else { %><%- config.title %><% } %></span>
-      </span>
-      <%- partial('_partial/post/date', { post: page, class_name: 'postdate' }) %>
-      <%- partial('_partial/post/category') %>
-      <%- partial('_partial/post/tag') %>
+  <header id="header">
+  <a href="<%- url_for("/") %>">
+  <% if (theme.logo && theme.logo.enabled) { %>
+    <% if (theme.gravatar.email && theme.logo.gravatar) { %>
+      <div id="logo" style="background-image: url(<%- gravatar(theme.gravatar.email) %>);"></div>
+    <% } else { %>
+      <div id="logo" style="background-image: url(<%- url_for(theme.logo.url) %>);"></div>
+    <% } %>
+  <% } %>
+    <div id="title">
+      <h1><%= config.pgtitle %></h1>
     </div>
-  </header>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      <% for (var i in theme.nav) { %> 
+        <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li>
+      <% } %>
+    </ul>
+  </div>
+</header>
   <%- partial('_partial/post/gallery') %>
   <div class="content" itemprop="articleBody">
     <%- page.content %>

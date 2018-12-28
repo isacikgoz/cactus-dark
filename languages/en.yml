@@ -1,7 +1,7 @@
 nav:
   home: Home
   about: About
-  articles: Writing
+  articles: Use Cases
   tag: Tag
   category: Category
   projects: Projects
@@ -11,10 +11,10 @@ footer:
   copyright: Copyright
 
 index:
-  find_me_on: Find me on
+  find_me_on: Find the project on
   enum_comma: ','
   enum_and: and
-  articles: Writing
+  articles: Use Cases
   projects: Projects
   topics: Topics
   most_recent: Most recent
